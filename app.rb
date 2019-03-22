@@ -23,7 +23,6 @@ class App < Sinatra::Base
     "#{@number}"
   end
     
-    end
     
 
 end
