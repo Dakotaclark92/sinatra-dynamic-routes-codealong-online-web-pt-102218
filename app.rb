@@ -17,5 +17,11 @@ class App < Sinatra::Base
     @user_name = params[:name]
     "Goodbye, #{@user_name}."
   end
+  
+  get '/multiply/:id' do
+    @number = all_the_numbers.select do |number|
+      number.id == params [:id]
+    end
+    
 
 end
