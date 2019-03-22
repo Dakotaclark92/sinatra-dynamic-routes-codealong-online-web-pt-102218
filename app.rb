@@ -19,8 +19,8 @@ class App < Sinatra::Base
   end
   
   get '/multiply/:num1/:num2' do
-    @number = all_the_numbers.select do |number|
-      number.id == params [:id]
+    @number = params[:num1],[:num2]
+    
     end
     
 
